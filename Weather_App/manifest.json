@@ -7,7 +7,7 @@
   "theme_color": "#0f0c29",
   "icons": [
     {
-      "src": "",
+      "src": "weather.png",
       "sizes": "192x192",
       "type": "image/png"
     }
