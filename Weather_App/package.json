@@ -1,0 +1,9 @@
+{
+  "name": "midnight-violet-weather",
+  "version": "1.0.0",
+  "description": "A mobile-first weather PWA with Midnight Violet theme",
+  "private": true,
+  "scripts": {
+    "start": "echo 'Static App Ready'"
+  }
+}
