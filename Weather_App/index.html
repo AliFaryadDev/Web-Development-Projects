@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>React + Tailwind</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <!-- React -->
+  <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+
+  <!-- ReactDOM -->
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+
+  <!-- Babel -->
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+  <!-- Google Font: Poppins -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link  href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+  rel="stylesheet"
+>
+  <link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#1d173d">
+
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      min-width: 0;
+    }
+  </style>
+</head>
+
+<body class="
+body
+font-[Poppins]
+min-h-screen
+bg-linear-to-b from-[#0f0c29] via-[#302b63] to-[#24243e] text-white
+  
+  ">
+
+  <div id="root"></div>
+  <script type="text/babel" src="./components/header/header.jsx"></script>
+  <script type="text/babel" src="./components/main/search-bar/SearchBar.jsx"></script>
+    <script type="text/babel" src="./components/main/weather-box/weatherBox.jsx"></script>
+      <script type="text/babel" src="./components/main/weather-stats/weatherStats.jsx"></script>
+      <script type="text/babel" src="./components/main/hourly-forecast/hourlyForecast.jsx"></script>
+      <script type="text/babel" src="./components/main/forecast-display/forecastDisplay.jsx"></script>
+      <script
+      type="text/babel"
+      src="App.jsx">
+      </script>
+      <script>
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('./sw.js')
+        .then((reg) => console.log('Service Worker Registered successfully!', reg))
+        .catch((err) => console.log('Service Worker Failed:', err));
+    });
+  }
+</script>
+
+</body>
+
+</html>
