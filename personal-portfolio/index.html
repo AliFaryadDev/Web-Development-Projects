@@ -1,0 +1,139 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Muhammad Ali - Full-Stack Web Developer</title>
+  <meta name="description" content="Muhammad Ali - Full-Stack Web Developer specializing in React, Tailwind CSS, FastAPI, and MongoDB. Explore my web development projects and skills.">
+
+  <style>
+    #header div{
+      display: flex;
+      justify-content: space-between;
+      
+      align-items: center;
+    }
+    #header div img{
+      width: 80px; height: 80px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body>
+  <!--Header-->
+  <header id="header">
+    <div>
+   <h1>Ali Developer</h1> 
+   <img src="ali.jpg" alt="Profile-Photo">
+  </div>
+  </header>
+  <hr>
+  <!--Navigation-Links-->
+  <nav>
+    <ul>
+      <li><a href="#header">Home</a></li>
+      <li><a href="#hero-section">About</a></li>
+      <li><a href="#contact-me">Contacts</a></li>
+    </ul>
+  </nav>
+  <!--Main-Content-->
+  <main id="main">
+  <!--Hero-Section-->
+  <section id="hero-section">
+    <h1>Hi, I am Ali</h1>
+    <h2>Full-Stack Web Developer</h2>
+    <p>I am a computer science student passionate about building modern and responsive web applications.</p>
+  </section>
+  <!--Skills-Section-->
+  <section>
+    <h2>Skills</h2>
+    <!---Front-End---->
+    <div>
+     <h3>
+       Frontend
+     </h3>
+      <ul>
+        <li>HTML5</li>
+        <li>CSS3</li>
+        <li>Tailwind CSS</li>
+        <li>JavaScript (ES6+)</li>
+        <li>React</li>
+      </ul>
+    </div>
+    <!---Backend---->
+    <div>
+      <h3>Backend</h3>
+      <ul>
+        <li>Python</li>
+        <li>FastAPI</li>
+      </ul>
+    </div>
+    <!---Databases--->
+    <div>
+      <h3>
+        Databases
+      </h3>
+      <ul>
+        <li>MongoDB</li>
+      </ul>
+    </div>
+  </section>
+  <!--Project-Section-->
+  <section>
+    <div>
+      <h2>Projects</h2>
+      <ul>
+        <li>
+          <a target="_blank" rel="noopener noreferrer" href="https://cards-project-l6iz.vercel.app/index.html">Weather-app</a>
+        </li>
+      </ul> 
+    </div>
+  </section>
+  <!--Contact-Section-->
+  <form action="#" method="POST">
+    <h2 id="contact-me">Contact Me</h2>
+    <fieldset>
+      <!--name-->
+      <div>
+      <label for="name">Full name*</label>
+      <input id="name" type="text" name="full-name" placeholder="Your name..." required>
+      
+      </div>
+      <br>
+      <!--tel-number-->
+      <div>
+            <label for="phone-number">Phone number*</label>
+      <input id="phone-number" type="tel" name="phone-number" placeholder="0XXXXXXXXXX"
+      minlength="11" maxlength="11" required>
+    </div>
+      <br>
+      <!--country-->
+      <div>
+      <label for="city">City</label>
+       <select id="city" name="city">
+         <option value="Lahore">
+          Lahore
+         </option>
+         <option value="Karachi">
+           Karachi
+         </option>
+         <option value="Islamabad">
+           Islamabad
+         </option>
+       </select>
+      </div>
+      <br>
+      <!--comment-->
+      <textarea aria-label="your-message" name="comment" placeholder="Your message" rows="4" cols="25">
+      </textarea>
+      <br><br>
+      <button type="submit">Submit</button>
+    </fieldset>
+  </form>
+  </main>
+  <hr>
+  <footer>
+    <p>© 2026 Muhammad Ali. All rights reserved.</p>
+  </footer>
+</body>
+</html>
